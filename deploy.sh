@@ -1,6 +1,6 @@
 docker build -t legoweggo/multi-client:latest -t legoweggo/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t legoweggo/multi-server:latest -t legoweggo/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t legoweggo/multi-worker:latest -t legoweggo/multi-worker:$SHA -f ./client/Dockerfile ./worker
+docker build -t legoweggo/multi-worker:latest -t legoweggo/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push legoweggo/multi-client:latest
 docker push legoweggo/multi-server:latest
